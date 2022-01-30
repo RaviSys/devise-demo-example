@@ -8,6 +8,31 @@
         <%= render "users/shared/error_messages", resource: resource %>
 
         <div class="form-group mb-2">
+          <%= f.label :first_name %>
+          <%= f.text_field :first_name, class: "form-control form-control-lg" %>
+        </div>
+
+        <div class="form-group mb-2">
+          <%= f.label :last_name %>
+          <%= f.text_field :last_name, class: "form-control form-control-lg" %>
+        </div>
+
+        <div class="form-group mb-2">
+          <%= f.label :contact_number %>
+          <%= f.text_field :contact_number, class: "form-control form-control-lg" %>
+        </div>
+
+        <div class="form-group mb-2">
+          <%= f.label :address %>
+          <%= f.text_field :address, class: "form-control form-control-lg" %>
+        </div>
+
+        <div class="form-group mb-2">
+          <%= f.label :username %>
+          <%= f.text_field :username, class: "form-control form-control-lg" %>
+        </div>
+
+        <div class="form-group mb-2">
           <%= f.label :email %>
           <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control form-control-lg" %>
         </div>
